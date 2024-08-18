@@ -1,4 +1,3 @@
-# Ensure pip is installed
 python3.9 -m ensurepip
 python3.9 -m pip install --upgrade pip
 
