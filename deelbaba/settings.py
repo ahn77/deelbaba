@@ -27,7 +27,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app', '.now.sh']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -71,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'deelbaba.wsgi.application'
+WSGI_APPLICATION = 'deelbaba.wsgi.app'
 
 
 # Database
@@ -134,9 +134,8 @@ USE_TZ = True
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 STATIC_URL = '/static/'
-STATIC_FILE_ROOT = BASE_DIR / 'static'
-STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
