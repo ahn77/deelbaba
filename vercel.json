@@ -12,6 +12,7 @@
             "src": "build_files.sh",
             "use": "@vercel/static-build",
             "config": {
+                "runtime": "python3.9",
                 "distDir": "staticfiles_build"
             }
         }
